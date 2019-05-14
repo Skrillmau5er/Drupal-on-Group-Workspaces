@@ -54,10 +54,6 @@ If you are running into any other major problems, you might have to do some rese
 This step should be pretty simple. Go to your web browser and open up your site URL. This will prompt you to setup your site. You might have to go to www.yourURL.com/web. This is because although you installed Drupal inside your www folder, the actual site itself resides within the web folder. There are a few errors that you can encounter. 
 Sometimes the Web Server will have permission errors, and other common problems.
 
-### Additional Setup ###
-* If you aren't seeing any style showing up on your site, then you will need to turn off aggregate CSS and JS files. It is in the configuration settings. 
-* You might have to change the .htaccess in the web/sites/default/files and remove the following from Options: -ExecCGI -Includes -MultiViews
-
 ## Using Drush ## 
 Drush is a tool to help us with common drupal tasks. Updating the database, clearing the cache, etc. 
 
@@ -86,4 +82,7 @@ Make sure you run the second command listed to run the update since we used drup
 ### Updating DB ###
 It is recommended to update your database using drush. You can also do this by visiting the update.php page; however, we were having issues with this and required Daniel to do his magic once again. 
 
-
+## Additional Setup/Info ##
+* If you aren't seeing any style showing up on your site, then you will need to turn off aggregate CSS and JS files. It is in the configuration settings. 
+* You might have to change the .htaccess in the web/sites/default/files and remove the following from Options: -ExecCGI -Includes -MultiViews
+* This method of installing drupal hasn't been perfected yet and probably will need refinement. However, we understand that this setup will make updates and other tasks much easier. 
